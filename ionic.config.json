@@ -1,0 +1,7 @@
+{
+  "name": "Tedo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
