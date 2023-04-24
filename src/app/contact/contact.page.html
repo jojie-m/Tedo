@@ -4,7 +4,14 @@
     <img src="assets/icon/shield.png">
   </div>
   <p id="authstatement">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae necessitatibus voluptatibus soluta.</p>
-  <form>
-  </form>
 </div>
+<div class="container">
+  <form [formGroup]=" contactPage" (ngSubmit)="onSubmit()">
+  <ion-item>
+    <ion-label position="floating">Phone Number</ion-label>
+    <input type="tel" formControlName="phone">
+  </ion-item>
+  <ion-button type="submit" [disabled]="contactPage.invalid">Submit</ion-button>
+</form>
+</div> 
 </ion-content>
